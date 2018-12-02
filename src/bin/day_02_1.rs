@@ -86,7 +86,7 @@ mod tests {
 
     #[test]
     fn correct_checksum() {
-        let box_ids = vec!["abcdef", "bababc", "abbcde", "abcccd", "aabcdd", "abcdee", "ababab"];
+        let box_ids = vec!["abcdef", "bababc", "abbcde", "abcccd", "aabcdd", "abcdee", "ababab"].join("\n");
         assert_eq!(12, checksum(&box_ids));
     }
 }
